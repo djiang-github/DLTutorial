@@ -23,3 +23,4 @@ def generate_synthetic_data(N):
 
 X_train, Y_train = generate_synthetic_data(20)
 # X_test,  Y_test  = generate_synthetic_data(1024)
+#new line
