@@ -18,30 +18,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="word2vec.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="compute-accuracy.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="distance.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="word2phrase.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="word-analogy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
