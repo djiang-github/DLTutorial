@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NanYUtilityLib\NanYUtilityLib.csproj">
+      <Project>{84b5a873-f294-4144-8d37-6bc3608eb591}</Project>
+      <Name>NanYUtilityLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParserUtil\ParserUtil.csproj">
+      <Project>{02d10102-7df7-414e-b821-060c1eb30621}</Project>
+      <Name>ParserUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

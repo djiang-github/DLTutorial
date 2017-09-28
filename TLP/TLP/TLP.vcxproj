@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C8876649-0F6D-44A2-8491-2B00421A1055}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TLP</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="console\dispatcher.h" />
+    <ClInclude Include="framework\decoder.h" />
+    <ClInclude Include="framework\featurespace.h" />
+    <ClInclude Include="framework\frontend.h" />
+    <ClInclude Include="framework\io.h" />
+    <ClInclude Include="framework\model.h" />
+    <ClInclude Include="framework\options.h" />
+    <ClInclude Include="framework\parameter.h" />
+    <ClInclude Include="framework\serializable.h" />
+    <ClInclude Include="Ltp.h" />
+    <ClInclude Include="LTPResource.h" />
+    <ClInclude Include="ner\decoder.h" />
+    <ClInclude Include="ner\extractor.h" />
+    <ClInclude Include="ner\instance.h" />
+    <ClInclude Include="ner\io.h" />
+    <ClInclude Include="ner\ner.h" />
+    <ClInclude Include="ner\ner_dll.h" />
+    <ClInclude Include="ner\ner_frontend.h" />
+    <ClInclude Include="ner\options.h" />
+    <ClInclude Include="ner\settings.h" />
+    <ClInclude Include="parser.n\classifier.h" />
+    <ClInclude Include="parser.n\context.h" />
+    <ClInclude Include="parser.n\instance.h" />
+    <ClInclude Include="parser.n\io.h" />
+    <ClInclude Include="parser.n\options.h" />
+    <ClInclude Include="parser.n\parser.h" />
+    <ClInclude Include="parser.n\parser_dll.h" />
+    <ClInclude Include="parser.n\parser_frontend.h" />
+    <ClInclude Include="parser.n\settings.h" />
+    <ClInclude Include="parser.n\system.h" />
+    <ClInclude Include="parser\collections.h" />
+    <ClInclude Include="parser\conllreader.h" />
+    <ClInclude Include="parser\conllwriter.h" />
+    <ClInclude Include="parser\debug.h" />
+    <ClInclude Include="parser\decoder.h" />
+    <ClInclude Include="parser\decoder1o.h" />
+    <ClInclude Include="parser\decoder2o.h" />
+    <ClInclude Include="parser\extractor.h" />
+    <ClInclude Include="parser\featurespace.h" />
+    <ClInclude Include="parser\featurevec.h" />
+    <ClInclude Include="parser\instance.h" />
+    <ClInclude Include="parser\model.h" />
+    <ClInclude Include="parser\options.h" />
+    <ClInclude Include="parser\parameters.h" />
+    <ClInclude Include="parser\parser.h" />
+    <ClInclude Include="parser\parser_dll.h" />
+    <ClInclude Include="parser\settings.h" />
+    <ClInclude Include="parser\treeutils.hpp" />
+    <ClInclude Include="postagger\decoder.h" />
+    <ClInclude Include="postagger\extractor.h" />
+    <ClInclude Include="postagger\instance.h" />
+    <ClInclude Include="postagger\io.h" />
+    <ClInclude Include="postagger\options.h" />
+    <ClInclude Include="postagger\postagger.h" />
+    <ClInclude Include="postagger\postagger_frontend.h" />
+    <ClInclude Include="postagger\postag_dll.h" />
+    <ClInclude Include="postagger\settings.h" />
+    <ClInclude Include="segmentor\customized_segmentor_frontend.h" />
+    <ClInclude Include="segmentor\decoder.h" />
+    <ClInclude Include="segmentor\extractor.h" />
+    <ClInclude Include="segmentor\instance.h" />
+    <ClInclude Include="segmentor\io.h" />
+    <ClInclude Include="segmentor\model.h" />
+    <ClInclude Include="segmentor\options.h" />
+    <ClInclude Include="segmentor\partial_segmentation.h" />
+    <ClInclude Include="segmentor\preprocessor.h" />
+    <ClInclude Include="segmentor\segmentor.h" />
+    <ClInclude Include="segmentor\segmentor_frontend.h" />
+    <ClInclude Include="segmentor\segment_dll.h" />
+    <ClInclude Include="segmentor\settings.h" />
+    <ClInclude Include="segmentor\special_tokens.h" />
+    <ClInclude Include="server\mongoose.h" />
+    <ClInclude Include="splitsnt\SplitSentence.h" />
+    <ClInclude Include="srl\common\config\ModelConf.h" />
+    <ClInclude Include="srl\common\Const.h" />
+    <ClInclude Include="srl\common\extractor\ConverterDataToSrlPiSample.h" />
+    <ClInclude Include="srl\common\extractor\ConverterFileContextToWordEmb.h" />
+    <ClInclude Include="srl\common\extractor\ExtractorFileToWordEmb.h" />
+    <ClInclude Include="srl\common\model\AffineTransformModelBuilder.h" />
+    <ClInclude Include="srl\common\model\BaseLabelModel.h" />
+    <ClInclude Include="srl\common\model\BiRNNModelBuilder.h" />
+    <ClInclude Include="srl\common\model\CNN1dLayerBuilder.h" />
+    <ClInclude Include="srl\common\model\ConstLookupModelBuilder.h" />
+    <ClInclude Include="srl\common\model\LabelModel.h" />
+    <ClInclude Include="srl\common\model\LookupModelBuilder.h" />
+    <ClInclude Include="srl\common\model\MLPModelBuilder.h" />
+    <ClInclude Include="srl\common\model\ModelBuilder.h" />
+    <ClInclude Include="srl\common\model\PiSrlModel.h" />
+    <ClInclude Include="srl\common\model\RNNModelBuilder.h" />
+    <ClInclude Include="srl\common\model\SeqLabelModel.h" />
+    <ClInclude Include="srl\common\process\DynetPredictor.h" />
+    <ClInclude Include="srl\common\process\DynetTrainer.h" />
+    <ClInclude Include="srl\common\process\LabelModelSGDSeqPredictor.h" />
+    <ClInclude Include="srl\common\process\LabelModelSGDSeqTrainer.h" />
+    <ClInclude Include="srl\common\process\LabelModelSGDTrainer.h" />
+    <ClInclude Include="srl\common\process\TrainStats.h" />
+    <ClInclude Include="srl\common\structure\SrlPiSample.h" />
+    <ClInclude Include="srl\common\structure\Word.h" />
+    <ClInclude Include="srl\common\structure\WordEmbBuilder.h" />
+    <ClInclude Include="srl\DepSRL.h" />
+    <ClInclude Include="srl\include\base\config.h" />
+    <ClInclude Include="srl\include\base\debug.h" />
+    <ClInclude Include="srl\include\base\process.h" />
+    <ClInclude Include="srl\include\base\processLoader.h" />
+    <ClInclude Include="srl\include\base\progressBar.h" />
+    <ClInclude Include="srl\include\base\timer.h" />
+    <ClInclude Include="srl\include\extractor\AbstractConverter.h" />
+    <ClInclude Include="srl\include\extractor\AbstractExtractor.h" />
+    <ClInclude Include="srl\include\extractor\BiConverter.h" />
+    <ClInclude Include="srl\include\extractor\Converter.h" />
+    <ClInclude Include="srl\include\extractor\ConverterBlockToConcept.h" />
+    <ClInclude Include="srl\include\extractor\ConverterConceptToSample.h" />
+    <ClInclude Include="srl\include\extractor\ConverterFileReader.h" />
+    <ClInclude Include="srl\include\extractor\ConverterMultiLineFileReader.h" />
+    <ClInclude Include="srl\include\extractor\Extractor.h" />
+    <ClInclude Include="srl\include\extractor\ExtractorFileToSample.h" />
+    <ClInclude Include="srl\include\model\LoopCounter.h" />
+    <ClInclude Include="srl\include\model\Model.h" />
+    <ClInclude Include="srl\include\model\RandomOrderMap.h" />
+    <ClInclude Include="srl\include\process\AbstractPredictor.h" />
+    <ClInclude Include="srl\include\process\AbstractTrainer.h" />
+    <ClInclude Include="srl\include\process\ConditionStopper.h" />
+    <ClInclude Include="srl\include\process\ModelPredictor.h" />
+    <ClInclude Include="srl\include\process\ModelTester.h" />
+    <ClInclude Include="srl\include\process\ModelTrainer.h" />
+    <ClInclude Include="srl\include\structure\Data.h" />
+    <ClInclude Include="srl\include\structure\DataConcept.h" />
+    <ClInclude Include="srl\include\structure\DataFileBlockContext.h" />
+    <ClInclude Include="srl\include\structure\DataFileContext.h" />
+    <ClInclude Include="srl\include\structure\DataFileName.h" />
+    <ClInclude Include="srl\include\structure\Performance.h" />
+    <ClInclude Include="srl\include\structure\Prediction.h" />
+    <ClInclude Include="srl\Pi\config\SrlPiConfig.h" />
+    <ClInclude Include="srl\Pi\model\SrlPiModel.h" />
+    <ClInclude Include="srl\Pi\process\PredSrlPi.h" />
+    <ClInclude Include="srl\Pi\process\TrainSrlPi.h" />
+    <ClInclude Include="srl\Srl\config\SrlSrlConfig.h" />
+    <ClInclude Include="srl\Srl\model\SrlSrlModel.h" />
+    <ClInclude Include="srl\Srl\process\PredSrlSrl.h" />
+    <ClInclude Include="srl\Srl\process\TrainSrlSrl.h" />
+    <ClInclude Include="srl\SRL_DLL.h" />
+    <ClInclude Include="srl\tool\config\ToolConf.h" />
+    <ClInclude Include="srl\tool\process\merge.h" />
+    <ClInclude Include="utils\cfgparser.hpp" />
+    <ClInclude Include="utils\chartypes.hpp" />
+    <ClInclude Include="utils\codecs.hpp" />
+    <ClInclude Include="utils\hasher.hpp" />
+    <ClInclude Include="utils\logging.hpp" />
+    <ClInclude Include="utils\math\fast_binned.h" />
+    <ClInclude Include="utils\math\featurevec.h" />
+    <ClInclude Include="utils\math\mat.h" />
+    <ClInclude Include="utils\math\sparsevec.h" />
+    <ClInclude Include="utils\sbcdbc.hpp" />
+    <ClInclude Include="utils\sentsplit.hpp" />
+    <ClInclude Include="utils\smartmap.hpp" />
+    <ClInclude Include="utils\spthread.hpp" />
+    <ClInclude Include="utils\stringmap.hpp" />
+    <ClInclude Include="utils\strpaste.hpp" />
+    <ClInclude Include="utils\strutils.hpp" />
+    <ClInclude Include="utils\strvec.hpp" />
+    <ClInclude Include="utils\template.hpp" />
+    <ClInclude Include="utils\time.hpp" />
+    <ClInclude Include="utils\tinybitset.hpp" />
+    <ClInclude Include="utils\unordered_map.hpp" />
+    <ClInclude Include="utils\unordered_set.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="console\cws_cmdline.cpp" />
+    <ClCompile Include="console\ltp_test.cpp" />
+    <ClCompile Include="console\ner_cmdline.cpp" />
+    <ClCompile Include="console\par_cmdline.cpp" />
+    <ClCompile Include="console\pos_cmdline.cpp" />
+    <ClCompile Include="console\srl_cmdline.cpp" />
+    <ClCompile Include="examples\cws.cpp" />
+    <ClCompile Include="examples\ner.cpp" />
+    <ClCompile Include="examples\par.cpp" />
+    <ClCompile Include="examples\pos.cpp" />
+    <ClCompile Include="examples\srl.cpp" />
+    <ClCompile Include="Ltp.cpp" />
+    <ClCompile Include="LTPResource.cpp" />
+    <ClCompile Include="ner\decoder.cpp" />
+    <ClCompile Include="ner\extractor.cpp" />
+    <ClCompile Include="ner\io.cpp" />
+    <ClCompile Include="ner\ner.cpp" />
+    <ClCompile Include="ner\ner_dll.cpp" />
+    <ClCompile Include="ner\ner_frontend.cpp" />
+    <ClCompile Include="ner\options.cpp" />
+    <ClCompile Include="ner\otner.cpp" />
+    <ClCompile Include="parser.n\classifier.cpp" />
+    <ClCompile Include="parser.n\instance.cpp" />
+    <ClCompile Include="parser.n\io.cpp" />
+    <ClCompile Include="parser.n\main.cpp" />
+    <ClCompile Include="parser.n\options.cpp" />
+    <ClCompile Include="parser.n\parser.cpp" />
+    <ClCompile Include="parser.n\parser_dll.cpp" />
+    <ClCompile Include="parser.n\parser_frontend.cpp" />
+    <ClCompile Include="parser.n\system.cpp" />
+    <ClCompile Include="parser\collections.cpp" />
+    <ClCompile Include="parser\decoder1o.cpp" />
+    <ClCompile Include="parser\decoder2o.cpp" />
+    <ClCompile Include="parser\extractor.cpp" />
+    <ClCompile Include="parser\featurespace.cpp" />
+    <ClCompile Include="parser\lgdpj.cpp" />
+    <ClCompile Include="parser\model.cpp" />
+    <ClCompile Include="parser\options.cpp" />
+    <ClCompile Include="parser\parser.cpp" />
+    <ClCompile Include="parser\parser_dll.cpp" />
+    <ClCompile Include="postagger\decoder.cpp" />
+    <ClCompile Include="postagger\extractor.cpp" />
+    <ClCompile Include="postagger\io.cpp" />
+    <ClCompile Include="postagger\otpos.cpp" />
+    <ClCompile Include="postagger\postagger.cpp" />
+    <ClCompile Include="postagger\postagger_frontend.cpp" />
+    <ClCompile Include="postagger\postag_dll.cpp" />
+    <ClCompile Include="segmentor\customized_segmentor_frontend.cpp" />
+    <ClCompile Include="segmentor\decoder.cpp" />
+    <ClCompile Include="segmentor\extractor.cpp" />
+    <ClCompile Include="segmentor\io.cpp" />
+    <ClCompile Include="segmentor\model.cpp" />
+    <ClCompile Include="segmentor\otcws.cpp" />
+    <ClCompile Include="segmentor\partial_segmentation.cpp" />
+    <ClCompile Include="segmentor\preprocessor.cpp" />
+    <ClCompile Include="segmentor\segmentor.cpp" />
+    <ClCompile Include="segmentor\segmentor_frontend.cpp" />
+    <ClCompile Include="segmentor\segment_dll.cpp" />
+    <ClCompile Include="server\ltp_server.cpp" />
+    <ClCompile Include="server\mongoose.c" />
+    <ClCompile Include="splitsnt\SplitSentence.cpp" />
+    <ClCompile Include="srl\common\model\AffineTransformModelBuilder.cpp" />
+    <ClCompile Include="srl\common\model\CNN1dLayerBuilder.cpp" />
+    <ClCompile Include="srl\common\structure\SrlPiSample.cpp" />
+    <ClCompile Include="srl\DepSRL.cpp" />
+    <ClCompile Include="srl\include\base\config.cpp" />
+    <ClCompile Include="srl\include\base\debug.cpp" />
+    <ClCompile Include="srl\include\extractor\ExtractorFileToSample.cpp" />
+    <ClCompile Include="srl\Pi\pred.cpp" />
+    <ClCompile Include="srl\Pi\process\PredSrlPi.cpp" />
+    <ClCompile Include="srl\Pi\process\TrainSrlPi.cpp" />
+    <ClCompile Include="srl\Pi\train.cpp" />
+    <ClCompile Include="srl\Srl\model\SrlSrlModel.cpp" />
+    <ClCompile Include="srl\Srl\pred.cpp" />
+    <ClCompile Include="srl\Srl\process\PredSrlSrl.cpp" />
+    <ClCompile Include="srl\Srl\process\TrainSrlSrl.cpp" />
+    <ClCompile Include="srl\Srl\train.cpp" />
+    <ClCompile Include="srl\SRL_DLL.cpp" />
+    <ClCompile Include="srl\tool\merge.cpp" />
+    <ClCompile Include="unittest\model_validation.cpp" />
+    <ClCompile Include="unittest\parser_unittest.cpp" />
+    <ClCompile Include="unittest\postagger_internal_unittest.cpp" />
+    <ClCompile Include="unittest\segmentor_unittest.cpp" />
+    <ClCompile Include="unittest\srl_interface_unittest.cpp" />
+    <ClCompile Include="unittest\unittest.cpp" />
+    <ClCompile Include="unittest\utils_chartypes_unittest.cpp" />
+    <ClCompile Include="unittest\utils_codecs_unittest.cpp" />
+    <ClCompile Include="unittest\utils_sbcdbc_unittest.cpp" />
+    <ClCompile Include="unittest\utils_sentsplit_unittest.cpp" />
+    <ClCompile Include="unittest\utils_smartmap_unittest.cpp" />
+    <ClCompile Include="unittest\utils_strpaste_unittest.cpp" />
+    <ClCompile Include="unittest\utils_strutils_unittest.cpp" />
+    <ClCompile Include="unittest\utils_template_unittest.cpp" />
+    <ClCompile Include="unittest\utils_tinybitset_unittest.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
